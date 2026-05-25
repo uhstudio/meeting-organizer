@@ -13,6 +13,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --no-scripts
 
 CMD php -S 0.0.0.0:$PORT
