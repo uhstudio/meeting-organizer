@@ -55,6 +55,8 @@
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
+	ini_set('session.save_path', sys_get_temp_dir());
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -66,8 +68,8 @@
 switch (ENVIRONMENT)
 {
 	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
+		error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+		ini_set('display_errors', 0);
 	break;
 
 	case 'testing':

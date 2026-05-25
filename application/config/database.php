@@ -6,12 +6,13 @@ $query_builder = TRUE;
 
 $db['default'] = array(
     'dsn'   => '',
-    'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'meeting_schedule', 
+    'hostname' => getenv('MYSQLHOST'),
+    'username' => getenv('MYSQLUSER'),
+    'password' => getenv('MYSQLPASSWORD'),
+    'database' => getenv('MYSQLDATABASE'),
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
+    'port' => getenv('MYSQLPORT'),
     'pconnect' => FALSE,
     'db_debug' => (ENVIRONMENT !== 'production'),
     'cache_on' => FALSE,
