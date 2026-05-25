@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Jakarta');
 
 
-$config['base_url'] = 'http://localhost/meeting-app/';
+$config['base_url'] = 'https://meeting-organizer.up.railway.app/';
 $config['index_page'] = '';
 $config['uri_protocol'] = 'AUTO';
 $config['encryption_key'] = '9c8e1c69153c0a1a9d1a14ca73da6ddd';
