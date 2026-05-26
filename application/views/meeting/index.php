@@ -656,7 +656,8 @@
         </div>
 
         <div class="table-container">
-            <table>
+            <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+                <table>
                 <thead>
                     <tr>
                         <th>Meeting Code</th>
@@ -769,7 +770,8 @@
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </tbody>
-            </table>
+                </table>
+            </div>
         </div>
     </div>
 
