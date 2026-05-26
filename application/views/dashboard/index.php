@@ -561,6 +561,40 @@
         .meeting-item:hover {
             background: #f0f0f0;
         }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            .header-left { align-items: center; }
+            .date-time { font-size: 20px; }
+            .clock { font-size: 16px; }
+            .header-center { margin: 0; }
+            .company-name { font-size: 16px; }
+            .profile-dropdown { min-width: 280px; right: -60px; }
+
+            .nav-menu {
+                padding: 10px 12px;
+                gap: 8px;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+            }
+            .nav-menu a { padding: 8px 12px; font-size: 13px; white-space: nowrap; }
+
+            .container { padding: 16px; }
+
+            .meeting-item { flex-direction: column; gap: 8px; }
+            .meeting-time { min-width: unset; font-size: 14px; }
+            .meeting-title { font-size: 15px; }
+
+            .detail-grid { grid-template-columns: 1fr; }
+            .detail-item.full-width { grid-column: 1; }
+            .modal-content { width: 95%; max-height: 90vh; }
+        }
+
     </style>
 </head>
 <body>
