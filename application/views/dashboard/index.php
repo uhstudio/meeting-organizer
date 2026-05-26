@@ -564,35 +564,66 @@
 
         @media (max-width: 768px) {
             .header {
-                padding: 12px 16px;
-                flex-direction: column;
-                gap: 8px;
-                text-align: center;
+                padding: 10px 16px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0;
             }
-            .header-left { align-items: center; }
-            .date-time { font-size: 20px; }
-            .clock { font-size: 16px; }
-            .header-center { margin: 0; }
-            .company-name { font-size: 16px; }
-            .profile-dropdown { min-width: 280px; right: -60px; }
+            .header-left {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .date-time { font-size: 13px; margin-bottom: 2px; }
+            .clock { font-size: 12px; letter-spacing: 1px; }
+            .header-center {
+                text-align: center;
+                margin: 0 8px;
+                flex: 1;
+            }
+            .company-name { font-size: 12px; }
+            .page-title { font-size: 11px; }
 
+            /* Sembunyikan nama & jabatan, tampilkan avatar saja */
+            .user-info-header { display: none; }
+            .dropdown-arrow { display: none; }
+            .profile-trigger {
+                padding: 4px;
+                background: rgba(255,255,255,0.1);
+            }
+            .user-avatar {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+
+            /* Dropdown tetap muncul di bawah avatar */
+            .profile-dropdown {
+                min-width: 260px;
+                right: 0;
+            }
+
+            /* Nav menu scroll horizontal */
             .nav-menu {
-                padding: 10px 12px;
-                gap: 8px;
+                padding: 8px 12px;
+                gap: 6px;
                 overflow-x: auto;
                 flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch;
             }
-            .nav-menu a { padding: 8px 12px; font-size: 13px; white-space: nowrap; }
+            .nav-menu::-webkit-scrollbar { display: none; }
+            .nav-menu a {
+                padding: 7px 12px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
 
             .container { padding: 16px; }
-
-            .meeting-item { flex-direction: column; gap: 8px; }
+            .meeting-item { flex-direction: column; gap: 6px; }
             .meeting-time { min-width: unset; font-size: 14px; }
             .meeting-title { font-size: 15px; }
-
             .detail-grid { grid-template-columns: 1fr; }
-            .detail-item.full-width { grid-column: 1; }
-            .modal-content { width: 95%; max-height: 90vh; }
+            .modal-content { width: 96%; max-height: 92vh; }
         }
 
     </style>
