@@ -423,6 +423,32 @@
             padding: 60px 20px;
             color: #999;
         }
+
+        @media (max-width: 768px) {
+            .header { padding: 10px 16px; flex-direction: row; align-items: center; justify-content: space-between; }
+            .header-left { flex-direction: column; align-items: flex-start; }
+            .date-time { font-size: 13px; margin-bottom: 2px; }
+            .clock { font-size: 12px; }
+            .header-center { margin: 0 8px; flex: 1; }
+            .company-name { font-size: 12px; }
+            .page-title { font-size: 11px; }
+            .user-info-header, .dropdown-arrow { display: none; }
+            .user-avatar { width: 36px; height: 36px; font-size: 14px; }
+            .profile-trigger { padding: 4px; }
+            .nav-menu { overflow-x: auto; flex-wrap: nowrap; padding: 8px 12px; }
+            .nav-menu a { white-space: nowrap; font-size: 13px; padding: 7px 12px; }
+            .container { padding: 16px; }
+
+            .stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px; }
+            .stat-card { padding: 14px; }
+            .stat-value { font-size: 22px; }
+            .search-filter { flex-direction: column; gap: 8px; }
+            .search-input, .filter-select { width: 100%; }
+            .toolbar { flex-direction: column; align-items: stretch; gap: 8px; }
+            .table-container { overflow-x: auto; }
+            .table-container table { min-width: 580px; font-size: 13px; }
+        }
+
     </style>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.css'); ?>">
 </head>

@@ -376,6 +376,35 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(30,58,95,0.3);
         }
+
+        @media (max-width: 768px) {
+            .header { padding: 10px 16px; flex-direction: row; align-items: center; justify-content: space-between; }
+            .header-left { flex-direction: column; align-items: flex-start; }
+            .date-time { font-size: 13px; margin-bottom: 2px; }
+            .clock { font-size: 12px; }
+            .header-center { margin: 0 8px; flex: 1; }
+            .company-name { font-size: 12px; }
+            .page-title { font-size: 11px; }
+            .user-info-header, .dropdown-arrow { display: none; }
+            .user-avatar { width: 36px; height: 36px; font-size: 14px; }
+            .profile-trigger { padding: 4px; }
+            .nav-menu { overflow-x: auto; flex-wrap: nowrap; padding: 8px 12px; }
+            .nav-menu a { white-space: nowrap; font-size: 13px; padding: 7px 12px; }
+            .container { padding: 16px; }
+
+            .calendar-header { flex-direction: column; gap: 10px; }
+            .month-selector { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+            .month-selector button { padding: 8px 12px; font-size: 13px; }
+            .month-display { font-size: 16px; }
+            .calendar-grid { padding: 8px; overflow-x: auto; }
+            .calendar-days-header { gap: 3px; }
+            .calendar-days { gap: 3px; }
+            .day-header { padding: 5px 2px; font-size: 10px; }
+            .calendar-day { min-height: 50px; padding: 3px; }
+            .day-number { font-size: 12px; }
+            .meeting-dot { font-size: 9px; padding: 2px 3px; }
+        }
+
     </style>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.css'); ?>">
 </head>
