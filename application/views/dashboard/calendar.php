@@ -377,6 +377,7 @@
             box-shadow: 0 5px 15px rgba(30,58,95,0.3);
         }
     </style>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.css'); ?>">
 </head>
 <body>
     <div class="header">
